@@ -1,403 +1,210 @@
-p{ margin: 10px;
-padding: 15px;
-}
-#test{ background-image: url('https://s3.amazonaws.com/ooomf-com-files/kMh0QXZMQOmsIiQRQIlW_14701556285_aacce9be47_o.jpg');
-       background-size:cover;
-       background-repeat: no-repeat;
-}
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 100px;
-  font-weight: 200;
-  position: absolute;
-  text-align: center;
-  display: block;
-  color: white;
-  top: 50%;
-  width: 1305px;
-margin-top: -110px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  opacity: 0;
-  -webkit-animation: anim 3.2s ease-out forwards 1s;
-  animation: anim 3.2s ease-out forwards 1s;
-}
-strong {
-  display: block;
-  font-weight: 400;
-}
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+/*-------------------------------------------------------------------------------------------------------------*/
 
+/*FIRST PAGE: INDEX.HTML*/
 
-@-webkit-keyframes anim {
-  0% {
-    text-shadow: 0 0 50px gold;
-    letter-spacing: 80px;
-    opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-  }
-  50% {
-    text-shadow: 0 0 1px gold;
-    opacity: 0.8;
-    -webkit-transform: rotateY(0deg);
-  }
-  75% {
-    text-shadow: 0 0 1px gold;
-    opacity: 0.8;
-    -webkit-transform: rotateY(0deg) translateZ(60px);
-  }
-  100% {
-    text-shadow: 0 0 1px gold;
-    opacity: 0.8;
-    letter-spacing: 8px;
-    -webkit-transform: rotateY(0deg) translateZ(100px);
-  }
+/*-------------------------------------------------------------------------------------------------------------*/
+div{
+	text-align: center;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+/*LOS ANGELES CALIFRONIA PORTION*/
+#index{
+	background-image: url('back.jpg');
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#la{
+	color: white;
+	text-align: center;
+	font-size: 18pt;
+	margin-top: 40px;
+	font-family: 'Slabo 27px', serif;
 
 }
-@keyframes anim {
-  0% {
-    text-shadow: 0 0 50px gold;
-    letter-spacing: 80px;
-    opacity: 0;
-    -moz-transform: rotateY(-90deg);
-  }
-  50% {
-    text-shadow: 0 0 1px gold;
-    opacity: 0.8;
-    -moz-transform: rotateY(0deg);
-  }
-  75% {
-    text-shadow: 0 0 1px gold;
-    opacity: 0.8;
-    -moz-transform: rotateY(0deg) translateZ(60px);
-  }
-  100% {
-    text-shadow: 0 0 1px gold;
-    opacity: 0.8;
-    letter-spacing: 8px;
-    -moz-transform: rotateY(0deg) translateZ(100px);
-  }
+hr{
+	width: 12%;
+	border: 0;
+	border-top: 1px solid #FFF;
+	display: inline-block;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*AMBER DOUGLAS PORTION*/
+h1{
+	margin-top: 17px;
+	text-align: left;
+	color: white;
+	font-size: 30pt;
+	margin-bottom: -42px;
+	font-family: 'Lobster', cursive;
+	padding-left: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*"YOUNG UPCOMING DEVELOPER PORTION*/
+#slogan {
+	text-align: center;
+	color: white;
+	font-size: 22pt;
+	font-family: 'Slabo 27px', serif;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*Link Style*/
+#header{
+	position: relative;
+	top: -10px;
+	background-color: #253426;
+	padding-bottom: 7px;
+}
+#navbar{
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	margin-left: -245px;
+}
+#ilink{
+	/*position: fixed;*/
+	 /*margin-top: 368px;*/
+	 margin-left: 40px;
+}
 
-}/**/
-#seconds { margin: 20px;
-  font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 100px;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000,
-               3px 3px 5px gold;}
-.box-shadow-menu {
-  position: relative;
-  padding-left: 1.25em;
+li{
+	display: inline;
+	color: white;
+	border-radius: 5px;
+	opacity: 0.9;
+	margin: 10px;
 }
-.box-shadow-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: white;
-  box-shadow:
-    0 0.25em 0 0 white,
-    0 0.5em 0 0 white;
+
+#nope{
+	display: inline;
+	color: black;
+	opacity: 1.9;
+	margin: 10px;
+	font-size: 17px;
+
 }
-/*Initialize*/
-ul#menu, ul#menu ul.sub-menu {
-    padding:0;
-    margin: 0;
+
+/*SUB MENU?---------------------------------------------------------------------------------------------*/
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #253426;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
-ul#menu li, ul#menu ul.sub-menu li {
-    list-style-type: none;
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
     display: inline-block;
 }
-/*Link Appearance*/
-ul#menu li a, ul#menu li ul.sub-menu li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: grey;
-    padding: 10px;
-    display:inline-block;
-}
-/*Make the parent of sub-menu relative*/
-ul#menu li {
-    position: relative;
-}
-/*sub menu*/
-ul#menu li ul.sub-menu {
-    display:none;
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
     position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100px;
-}
-ul#menu li:hover ul.sub-menu {
-    display:block;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-
-
-
-
-
-/*
-*/
-/*2nd page*/
-#dos{ background-image: url('https://s3.amazonaws.com/ooomf-com-files/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg');
-      background-size:cover;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
-#aboutMe{
-	background-color:rgba(0, 0, 0, 0.5);
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #a3eca3;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+footer{
+	margin-top: 300px;
+	color: gray;
+	font-family: 'Rochester', cursive;
+}
+/*----------------------------------------------------------------------------------------------------------
+/*2ND PAGE: Projects Page*/
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/*LINKS AT THE TOP OF THE PAGE*/
+.project{
+	background-image: url('https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2');
 	color: white;
-   -webkit-border-radius: 40px;
--moz-border-radius: 40px;
-border-radius: 40px;
-font-size: 24px;
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
 }
-h2 {font-family: 'Lobster', cursive;
-	color: white;
-	font-size: 100px;
+#plink{
+	 margin-top: 30px;
+	 font-family: 'Nunito', sans-serif;
+}
+#nope2{
+	display: inline;
+	font-family: 'Slabo 27px', serif;
+	color: black;
+	padding: 18px;
+	background-color: #FFE0C2;
+	border-radius: 5px;
+	opacity: 1.9;
+	margin: 10px;
+}
+/*IMAGES OF FIRST TWO PREVIOUS WEBSITES*/
+#imgs{
+	margin-top: 40px;
+ 	margin-bottom: 20px;
+}
+/*THE STYLE FOR THE PARAGRAPHS*/
+#parayafs{
+	font-family: 'Nunito', sans-serif;
+}
+#one{
+	width: 400px;
+	float: left;
+	margin-left: 235px;
+	color: black;
+}
+#two{
+	width: 400px;
+	float: right;
+	margin-right: 240px;
+	color: black;
+}
+/*THE STYLE FOR THE FOUR LINKS FOR THE PREVIOUS PROJECTS*/
+#nope3{
+	font-family: 'Nunito', sans-serif;
+	color: black;
+	margin-right: 215px;
+  	margin-left: 160px;
 	text-align: center;
-	text-shadow: 1px 1px 1px #000,
-               3px 3px 5px mediumturquoise;
-margin: 8px;
-padding: 10px;
 }
-img{
-  height: 250px;
-width: 430px;
-margin: 2px 3px 1px 7px;
-padding: 2px;
-background-image: repeat-x;
-}
-#sig {
-height: 50px;
-width: 200px;
-margin-left: 530px; }
-#page2{
-  margin-left: 445px;
-padding: 2px;
+/*SECOND SET OF IMAGES ON THE PROJECTS PAGE*/
+#imgs2{
+	margin-top: 20px;
+ 	margin-bottom: 20px;
 }
 
-
-
-
-
-/*
-*/
-/*3rd page*/
-#thres{ background-image: url('https://s3.amazonaws.com/ooomf-com-files/pHyYeNZMRFOIRpYeW7X3_manacloseup%20copy.jpg');
-        background-size:cover;
-}
-#meGusta{
-  background-color:rgba(0, 0, 0, 0.4);
-  color: white;
-   -webkit-border-radius: 40px;
--moz-border-radius: 40px;
-border-radius: 40px;
-font-size: 24px;
-}
-h3 {font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 100px;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000,
-               3px 3px 5px mediumvioletred;
-margin: 8px;
-padding: 10px;
-}
-
-img{
-  height: 250px;
-width: 430px;
-margin: 3px;
-padding: 2px;
-}
-#para3{
-  display: inline-block;
-}
-#p1{ margin: 1px;
- height:81px;
- width:390px;
- display: inline-block;
- margin-bottom: 3px;
-  }
-#p2{
-height:81px;
- width:390px;
- display: inline-block;
-  }
-#p3{
-height:81px;
- width:390px;
- display: inline-block;
-}
-
-
-
-
-
-
-/*
-*/
-/*4th page*/
-#projects{ background-image: url('https://s3.amazonaws.com/ooomf-com-files/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg');
-           background-size:cover;
-}
-h4 {font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 100px;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000,
-               3px 3px 5px mediumvioletred;
-margin: 8px;
-padding: 10px;
-}
-
-#p4{ background-color:rgba(0, 0, 0, 0.4);
-  color: white;
-   -webkit-border-radius: 40px;
--moz-border-radius: 40px;
-border-radius: 40px;
-font-size: 24px;
-}
-
-
-
-
-
-/*M O B I L E  R E S P O N S I V E*/
-/*First Page*/
- @media (max-width: 320px) {
-  #test { width: 100%;
-         margin: 0px auto;
-         height: 568px;
-
-  }
-  h1{width: 30%;
-     font-size: 80px;
-     position: absolute;
-  display: block;
-
-  }
-/*First Page*/
-
-
-
-/*Second Page*/
-#dos{ width: 100%;
-         margin: 0px auto;
-         height: 568px;}
-/*#aboutMe { width: 100%;}*/
-h2{ font-size: 75px;
-text-align: center;
-margin: 8px;
-padding: 10px;
-}
-/*img{height: 50px;
-width: 200px;
-margin-left: 30px;  }*/
-#sig{height: 50px;
-width: 200px;
-margin-left: 30px;}
-#page2{
-height: 185px;
-width: 290px;
-padding: 2px;
-margin-top: 5px;
-margin-left: 10px;
-}
-p{margin: 10px;}
-/* Second page*/
-
-
-
-/*Third Page*/
-#thres{ width: 100%;
-         margin: 0px auto;
-         height: 568px;
-}
-#meGusta{
-width: 300px;
-padding: 2px;
-}
-h3 {font-size: 73px;
-text-align: center;
-margin: 8px;
-padding: 10px;
-}
-
-img {
-height: 170px;
-width: 260px;
-margin-left: 15px;
-}
-/*#para3{
-  display: inline-block;
-}*/
-#p1{ margin: 1px;
- height:81px;
- width:290px;
- display: inline-block;
- margin-bottom: 3px;
- font-size: 23px;
-  }
-#p2{
-margin: 1px;
- height:81px;
- width:290px;
- display: inline-block;
- margin-bottom: 3px;
- font-size: 23px;
-  }
-#p3{
-margin: 1px;
- height:81px;
- width:290px;
- display: inline-block;
- margin-bottom: 3px;
- font-size: 23px;
-}
-
-/*Third page*/
-
-
-
-/*Fourth Page*/
-#projects{ background-size: cover;
-  width: 100%;
-}
-h4 {font-size: 73px;
-text-align: center;
-margin: 8px;
-padding: 10px;
-}
-
-#p4{ background-color:rgba(0, 0, 0, 0.4);
-  color: white;
-   -webkit-border-radius: 40px;
--moz-border-radius: 40px;
-border-radius: 40px;
-font-size: 24px;
-}
-/* Fourth page*/
-
-}
-
-
-
-  /*Paragraph design*/
-  p:first-of-type:first-letter {
-    height: 0.7em;
-    margin: 0.09em 0 -0.05em 0;
-    padding: 0 0.1em 0 0;
-    font-size: 5em;
-    line-height: 0.85em;
-    float: left;
-  }
-
+/*MOBILE RESPONSIVE TYPE SHIT*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
 
 }
