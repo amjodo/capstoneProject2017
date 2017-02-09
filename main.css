@@ -2,6 +2,15 @@
 /*-------------------------------------------------------------------------------------------------------------*/
 
 /*FIRST PAGE: INDEX.HTML*/
+a:link{
+  color:white;
+}
+a:visited{
+  color:white;
+}
+a:hover{
+	color: black;
+}
 
 /*-------------------------------------------------------------------------------------------------------------*/
 div{
@@ -35,6 +44,7 @@ h1{
 	margin-top: 17px;
 	text-align: left;
 	color: white;
+	background-clip: url ('sparkle.jpg');
 	font-size: 30pt;
 	margin-bottom: -42px;
 	font-family: 'Lobster', cursive;
@@ -100,6 +110,7 @@ li{
 .dropdown {
     position: relative;
     display: inline-block;
+		    margin-left: 20px;
 }
 
 /* Dropdown Content (Hidden by Default) */
