@@ -4,12 +4,15 @@
 /*FIRST PAGE: INDEX.HTML*/
 a:link{
   color:white;
+  text-decoration: none;
 }
 a:visited{
   color:white;
+  text-decoration: none;
 }
 a:hover{
 	color: black;
+  text-decoration: none;
 }
 
 /*-------------------------------------------------------------------------------------------------------------*/
@@ -41,6 +44,16 @@ hr{
 /*----------------------------------------------------------------------------------------------------------*/
 /*AMBER DOUGLAS PORTION*/
 h1{
+	margin-top: 17px;
+	text-align: left;
+	color: white;
+	background-clip: url ('sparkle.jpg');
+	font-size: 30pt;
+	margin-bottom: -42px;
+	font-family: 'Lobster', cursive;
+	padding-left: 20px;
+}
+h2{
 	margin-top: 17px;
 	text-align: left;
 	color: white;
@@ -142,6 +155,7 @@ li{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #a3eca3;
+    color: black;
 }
 
 
